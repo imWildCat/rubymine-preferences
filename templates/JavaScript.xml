@@ -1,0 +1,63 @@
+<templateSet group="JavaScript">
+  <template name="rq" value="var $DEP$ = require('$PATH$');" description="require" toReformat="false" toShortenFQNames="true">
+    <variable name="DEP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="dct" value="/**&#10; * Created by wildcat, all rights reserved.&#10; */&#10;&#10;'use strict';&#10;&#10;var React = require('react');&#10;var Reflux = require('reflux');&#10;&#10;var $NAME$ = React.createClass({&#10;&#10;    render: function() {&#10;        return (&#10;            &lt;div&gt;&#10;            &lt;/div&gt;&#10;        )&#10;    },&#10;});&#10;&#10;module.exports = $NAME$;" description="default component template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="dat" value="/**&#10; * Created by wildcat, all rights reserved.&#10; */&#10;&#10;'use strict';&#10;&#10;var Reflux = require('reflux');&#10;&#10;var $NAME$ = Reflux.createActions([&#10;    '$FIRST_ACTION_NAME$'&#10;]);&#10;&#10;module.exports = $NAME$;" description="default action template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIRST_ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="dst" value="/**&#10; * Created by wildcat, all rights reserved.&#10; */&#10;&#10;'use strict';&#10;&#10;var Reflux = require('reflux');&#10;var $ACTION_NAME$ = require('$ACTION_PATH$');&#10;&#10;var $NAME$ = Reflux.createStore({&#10;    &#10;    listenables: $ACTION_NAME$,&#10;    &#10;    init: function() {&#10;    },&#10;    &#10;});&#10;&#10;module.exports = $NAME$;" description="default store template" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="mtd" value="$NAME$: function($PARAMS$) {&#10;    $CODE$&#10;}," description="method" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="me" value="module.exports = " description="module.exports" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cl" value="console.log($OBJ$);" description="console.log" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
