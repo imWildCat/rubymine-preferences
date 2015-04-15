@@ -8,7 +8,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="dct" value="/**&#10; * Created by wildcat, all rights reserved.&#10; */&#10;&#10;'use strict';&#10;&#10;var React = require('react');&#10;var Reflux = require('reflux');&#10;&#10;var $NAME$ = React.createClass({&#10;&#10;    render: function() {&#10;        return (&#10;            &lt;div&gt;&#10;            &lt;/div&gt;&#10;        )&#10;    },&#10;});&#10;&#10;module.exports = $NAME$;" description="default component template" toReformat="false" toShortenFQNames="true">
+  <template name="dct" value="/**&#10; * Created by wildcat, all rights reserved.&#10; */&#10;&#10;'use strict';&#10;&#10;var React = require('react');&#10;var Reflux = require('reflux');&#10;&#10;var $NAME$ = React.createClass({&#10;&#10;    render: function() {&#10;        return (&#10;            &lt;div&gt;&#10;            &lt;/div&gt;&#10;        )&#10;    }&#10;});&#10;&#10;module.exports = $NAME$;" description="default component template" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -45,7 +45,8 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="me" value="module.exports = " description="module.exports" toReformat="false" toShortenFQNames="true">
+  <template name="me" value="module.exports = $OBJ$;" description="module.exports" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
@@ -54,6 +55,23 @@
   </template>
   <template name="cl" value="console.log($OBJ$);" description="console.log" toReformat="false" toShortenFQNames="true">
     <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cls" value="($PARAMS$) =&gt; {&#10;    $CODE$&#10;}" description="closure" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cn" value="className=&quot;$CODE$&quot;" description="className" toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
